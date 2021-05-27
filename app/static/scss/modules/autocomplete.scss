@@ -1,0 +1,17 @@
+.autocomplete {
+  box-sizing: border-box;
+  & > *,
+  & > *::after,
+  & > *::before {
+    box-sizing: inherit;
+  }
+
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  max-width: 680px; 
+  width: 100%;
+
+  &__field {
+
+  }
+}
