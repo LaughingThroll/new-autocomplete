@@ -1,0 +1,35 @@
+{
+  "name": "start__gulp",
+  "version": "1.0.0",
+  "description": "main assembly",
+  "reposetory": "STANDARD-GULP",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development gulp",
+    "build": "cross-env NODE_ENV=production gulp build"
+  },
+  "author": "Kostya Konovalenko",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "cross-env": "^7.0.2",
+    "del": "^5.1.0",
+    "eslint": "^4.19.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-changed": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csscomb": "^3.1.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-filter": "^6.0.0",
+    "gulp-if": "^3.0.0",
+    "gulp-load-plugins": "^2.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
