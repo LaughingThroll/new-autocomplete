@@ -1,0 +1,18 @@
+.autocomplete {
+  box-sizing: border-box;
+
+  & > *,
+  & > *::before,
+  & > *::after {
+    box-sizing: inherit;
+  } 
+
+  font-size: 20px;
+  font-family: 'Nunito', sans-serif;
+  max-width: 680px;
+  width: 100%;
+
+  &__dropdown {
+    
+  }
+}
