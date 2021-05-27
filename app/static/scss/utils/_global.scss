@@ -6,4 +6,10 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+  font-family: 'Nunito', sans-serif;
+
+  .tooltip {
+    max-width: 280px;
+    width: 100%;
+  }
 }

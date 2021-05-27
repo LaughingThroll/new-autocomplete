@@ -1,3 +1,12 @@
 @import 'utils/vars';
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 @import 'utils/global';
+
+
+
+
+@import './sub-modules/icons.scss';
+@import './sub-modules/keys.scss';
+@import './sub-modules/container-key.scss';
+
+@import './modules/tooltip.scss';
