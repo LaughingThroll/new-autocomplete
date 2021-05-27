@@ -1,27 +1,54 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Autocomplete</title>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Autocomplete</title>
 
-		<link rel="stylesheet" href="css/libs.min.css">
-		<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
 
-	</head>
+</head>
 
-	<body>
-		<div class="container">
-			Hello
-
-
+<body>
+	<div class="container">
+		<div class="dropdown-content">
+			<div class="dropdown-content__text"> Shoes </div>
+		</div>
+		<div class="dropdown-content">
+			<div class="dropdown-content__user-images">
+				<picture>
+					<source srcset="./images/content/hidri.webp 1x, ./images/content/hidri@2x.webp 2x, ./images/content/hidri@3x.webp 3x">
+					<source srcset="./images/content/hidri.jpg 1x, ./images/content/hidri@2x.jpg 2x, ./images/content/hidri@3x.jpg 3x">
+					<img src="./images/content/hidri.jpg" alt="name">
+				</picture>
+			</div>
+			<div class="dropdown-content__text"> Dean Hidri </div>
 		</div>
 
+		<div class="dropdown-content">
+			<div class="dropdown-content__label label label--active">Fashion</div>
+			<div class="dropdown-content__text">What should i look out for when buying a winter jacket? </div>
+		</div>
+		<div class="dropdown-content">
+			<div class="dropdown-content__label label">Jacket</div>
+			<div class="dropdown-content__text"> Where do i get good winter jackets? </div>
+		</div>
+		<div class="dropdown-content">
+			<div class="dropdown-content__label label">Fashion</div>
+			<div class="dropdown-content__text"> Is it possible to sky with a normal winter jacket? </div>
+		</div>
+		<div class="dropdown-content dropdown-content--show-more">
+			<div class="dropdown-content__text"> Show more (200 more results) </div>
+		</div>
+
+	</div>
 
 
 
-		<script src="js/main.min.js"></script>
-	</body>
+
+	<!-- <script src="js/main.min.js"></script> -->
+</body>
 
 </html>
