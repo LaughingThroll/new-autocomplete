@@ -7,7 +7,7 @@ $box-shadow--2: 1px 2px 0 $shadow-color;
 
 .dropdown {
   padding: 20px 15px 25px;
-  border-top: 1px solid $dropdown-border-color;
+  // border-top: 1px solid $dropdown-border-color;
   box-shadow: $box-shadow--1,
               $box-shadow--2;
   border-radius: 10px;
