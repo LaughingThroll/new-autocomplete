@@ -13,13 +13,27 @@
 
 <body>
 	<div class="container">
-
-
 		<form class="autocomplete">
+			<div class="tooltip autocomplete__tooltip">
+				<div class="tooltip__title">Open quick search</div>
+				<div class="tooltip__content">To start the search from anywhere, you can also call the search with an
+					abbreviation.</div>
+				<div class="tooltip__keys keys">
+					<div class="keys__item container-key container-key--image-key icon-command">Cmd</div>
+					<div class="keys__item keys__separator">+</div>
+					<div class="keys__item container-key">j</div>
+					<div class="keys__item keys__separator">+</div>
+					<div class="keys__item container-key">i</div>
+					<div class="keys__item keys__separator">+</div>
+					<div class="keys__item container-key">m</div>
+				</div>
+			</div>
+
 			<div class="autocomplete__field field field--icon">
 				<input class="field__input" placeholder="Search for anything" type="text">
 			</div>
-			<div class="autocomplete__dropdown dropdown animation-height">
+			<!-- animation-height for animation -->
+			<div class="autocomplete__dropdown dropdown ">
 				<div class="dropdown__title">Recent Search</div>
 				<ul class="dropdown__list">
 					<li class="dropdown__item">
@@ -47,7 +61,6 @@
 							<div class="dropdown-item__icons icon-with-text icon-enter">Select</div>
 						</button>
 					</li>
-
 					<li class="dropdown__item">
 						<button class="dropdown__button dropdown-item " type="button">
 							<div class="dropdown-item__content dropdown-content">

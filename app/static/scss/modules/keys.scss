@@ -1,0 +1,14 @@
+$keys-item-separator: #999ca7;
+
+.keys {
+  display: flex;
+  align-items: center;
+
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &__separator {
+    color:  $keys-item-separator;
+  }
+}
