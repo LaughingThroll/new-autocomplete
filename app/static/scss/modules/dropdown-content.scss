@@ -1,0 +1,38 @@
+$results-color: #d7d7e1;
+$margin-label-and-user: 10px;
+
+.dropdown-content {
+  display: flex;
+  font-size: 16px;
+  line-height: 18px;
+
+  &__label {
+    margin-right: $margin-label-and-user;
+  }
+
+  &__user-images {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: $margin-label-and-user;
+
+    img {
+      display: block;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__text {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    align-self: center;
+  }
+
+  &--show-more {
+    color: $results-color;
+  }
+}

@@ -1,6 +1,7 @@
 $active-bg-color: #ebecf2;
 
 .dropdown-item {
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,7 +11,7 @@ $active-bg-color: #ebecf2;
   border-radius: 10px;
   transition: background-color .3s ease;
   
-  &:hover:not(.dropdown-item--active) {
+  &:hover:not(.dropdown-item--active):not(.dropdown-item--show-more) {
     background-color: darken($active-bg-color, 5);
   }
 
