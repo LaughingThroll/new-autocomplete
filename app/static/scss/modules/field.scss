@@ -1,0 +1,71 @@
+$color: #000022;
+$bg-color: #fff;
+$placeholder-color: #b8b8c4;
+$shadow-color: #d1d1d9;
+$box-shadow--1: 0 0 25px $shadow-color;
+$box-shadow--2: 1px 2px 0 $shadow-color;
+
+.field {
+  position: relative;
+  
+  &--icon {
+    .field__input {
+      padding: 0 26px 0 60px;
+    }
+
+    &::before {
+      $width: 26px;
+      $coff: 6px;
+
+      content: url('../images/icons/loupe.svg');
+      position: absolute;
+      top: 50%;
+      left: $width - $coff;
+      width: $width;
+      height: 26px;
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+  }
+}
+
+.field__input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 26px;
+  height: 75px;
+  background-color: $bg-color;
+  color: $color;
+  border: 0;
+  box-shadow: $box-shadow--1,
+              $box-shadow--2;
+  border-radius: 10px;
+  outline: none;
+  font-weight: 700;
+  
+  &::placeholder {
+    color: $placeholder-color;
+    font-weight: 400;
+  }
+
+  &:focus {
+    animation: easy-bounce .3s ease-out;
+  }
+
+  &:focus::placeholder {
+    opacity: 0;
+  }
+}
+
+
+@keyframes easy-bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.003);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
