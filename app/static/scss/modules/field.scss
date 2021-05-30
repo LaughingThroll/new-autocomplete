@@ -1,10 +1,3 @@
-$color: #000022;
-$bg-color: #fff;
-$placeholder-color: #b8b8c4;
-$shadow-color: #d1d1d9;
-$box-shadow--1: 0 0 25px $shadow-color;
-$box-shadow--2: 1px 2px 0 $shadow-color;
-
 .field {
   position: relative;
   
@@ -34,8 +27,8 @@ $box-shadow--2: 1px 2px 0 $shadow-color;
   width: 100%;
   padding: 0 26px;
   height: 75px;
-  background-color: $bg-color;
-  color: $color;
+  background-color: $field-bg-color;
+  color: $field-color;
   border: 0;
   box-shadow: $box-shadow--1,
               $box-shadow--2;
@@ -44,7 +37,7 @@ $box-shadow--2: 1px 2px 0 $shadow-color;
   font-weight: 700;
   
   &::placeholder {
-    color: $placeholder-color;
+    color: $field-placeholder-color;
     font-weight: 400;
   }
 

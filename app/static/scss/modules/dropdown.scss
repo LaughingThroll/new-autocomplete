@@ -1,21 +1,12 @@
-$dropdown-border-color: #e6e7ed;
-$dropdown-bg-color: #fff;
-$color-title: #bdbdc7;
-$shadow-color: #d1d1d9;
-$box-shadow--1: 0 0 25px $shadow-color;
-$box-shadow--2: 1px 2px 0 $shadow-color;
-
 .dropdown {
   padding: 20px 15px 25px;
-  // border-top: 1px solid $dropdown-border-color;
-  box-shadow: $box-shadow--1,
-              $box-shadow--2;
+  box-shadow: $box-shadow--1, $box-shadow--2;
   border-radius: 10px;
   background-color: $dropdown-bg-color;
 
   &__title {
     font-size: 14px;
-    color: $color-title;
+    color: $dropdown-title-color;
     line-height: 16px;
     margin: 0 0 5px 10px;
   }
@@ -26,8 +17,18 @@ $box-shadow--2: 1px 2px 0 $shadow-color;
     margin: 0;
   }
 
-  &__item:not(:last-child) {
-    margin-bottom: 5px;
+  &__item {
+    transform: scaleY(0) rotateY(-70deg);
+    transform-origin: top center;
+    transition: transform .3s ease-out;
+
+    &--active {
+      transform: scaleY(1) rotateY(0);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
   }
 
   &__button {

@@ -9,17 +9,3 @@ $cubic: cubic-bezier(.56,.65,.94,.52);
     transform: scaleY(1);
   }
 }
-
-
-// @for $i from 1 through 3 {
-  // .animation-height {
-    // transform: scaleY(0);
-    // transform-origin: top center;
-    // transition: transform .2s #{$i - 0.7s} cubic-bezier(.56,.65,.94,.52);
-
-    // &--anime-active {
-      // transform: scaleY(1);d
-    // }
-  // }
-// }
-
