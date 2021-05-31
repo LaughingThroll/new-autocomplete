@@ -7,9 +7,10 @@ export interface FieldProps extends HTMLAttributes<HTMLInputElement> {
   icon?: boolean
   onFocus?: (e: React.FocusEvent<HTMLInputElement>) => void
   classNames?: string
+  value?: string
 }
 
-const Field: React.FC<FieldProps> = ({ onChange, icon, classNames = '', ...rest }) => {
+const Field: React.FC<FieldProps> = ({ onChange, icon, value, classNames = '', ...rest }) => {
   const classNamesWithSpaceOnStart = ' ' + classNames
 
   return ( 
@@ -17,7 +18,7 @@ const Field: React.FC<FieldProps> = ({ onChange, icon, classNames = '', ...rest 
       "field": true,
       "field--icon": icon
     }) + classNamesWithSpaceOnStart }>
-      <input className="field__input" onChange={onChange} type="text" {...rest} />
+      <input className="field__input" onChange={onChange} value={value} type="text" {...rest} />
     </div> 
   )
 }

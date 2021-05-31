@@ -1,0 +1,13 @@
+.test-field {
+  max-width: 500px;
+  margin: 0 auto;
+
+  input {
+    background-color: #000022;
+    color: #fff;
+  }
+
+  &--icon::before {
+    content: url('../../assets/flow.svg');
+  }
+}
