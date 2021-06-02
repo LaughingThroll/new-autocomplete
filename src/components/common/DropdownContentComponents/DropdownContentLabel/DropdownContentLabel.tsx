@@ -1,5 +1,7 @@
 import React from 'react'
-import { Label, LabelProps } from './../index'
+import { Label, LabelProps } from '../../index'
+import './dropdownContentLabel.scss'
+
 
 export interface DropdownContentLabelProps extends LabelProps {
   description: string

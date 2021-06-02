@@ -2,7 +2,7 @@ import { render } from '@testing-library/react'
 import DropdownContent, { DropdownContentProps } from './DropdownContent'
 
 const setUp = (props: DropdownContentProps) => render(<DropdownContent {...props} />)
-const requiredProps = {  }
+const requiredProps = { text: 'Hello World' }
 
 describe('DropdownContent render', () => {
   it('default', () => {
@@ -12,16 +12,8 @@ describe('DropdownContent render', () => {
 
     expect(dropdownContent).toBeInTheDocument()
     expect(dropdownContentText).toBeInTheDocument()
+    expect(dropdownContentText).toHaveTextContent(requiredProps.text)
   })
-
-  it('with text', () => {
-    const props = { ...requiredProps, text: 'Hello World' }
-    const { container } = setUp(props)
-    const dropdownContentText = container.querySelector('.dropdown-content__text') 
-
-    expect(dropdownContentText).toHaveTextContent(props.text)
-  })
-
 
   it('with showMore', () => {
     const { container } = setUp({ ...requiredProps, showMore: true })
@@ -35,5 +27,12 @@ describe('DropdownContent render', () => {
     const showMore = container.querySelector('.dropdown-content--show-more')
    
     expect(showMore).toBeNull()
+  })
+
+  it('with classNames', () => {
+    const { container } = setUp({ ...requiredProps, classNames: 'test-class' })
+    const showMore = container.querySelector('.dropdown-content')
+   
+    expect(showMore).toHaveClass('test-class')
   })
 })

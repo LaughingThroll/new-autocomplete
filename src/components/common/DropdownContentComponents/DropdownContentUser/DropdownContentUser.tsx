@@ -1,5 +1,5 @@
 import React from 'react'
-import { Picture, PictureProps } from './../index'
+import { Picture, PictureProps } from '../../index'
 
 export interface DropdownContentUserProps extends PictureProps {
   name: string

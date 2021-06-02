@@ -1,0 +1,9 @@
+@import './../styles.scss';
+
+$results-color: #d7d7e1;
+
+.dropdown-content {
+  &--show-more {
+    color: $results-color;
+  } 
+}

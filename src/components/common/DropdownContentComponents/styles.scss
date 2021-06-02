@@ -1,0 +1,12 @@
+.dropdown-content {
+  display: flex;
+  font-size: 16px;
+  line-height: 18px;
+  
+  &__text {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    align-self: center;
+  }
+}
