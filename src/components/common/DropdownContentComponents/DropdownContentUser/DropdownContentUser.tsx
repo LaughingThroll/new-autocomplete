@@ -1,5 +1,6 @@
 import React from 'react'
-import { Picture, PictureProps } from '../../index'
+import { Picture, PictureProps } from '../../'
+import './dropdownContentUser.scss'
 
 export interface DropdownContentUserProps extends PictureProps {
   name: string

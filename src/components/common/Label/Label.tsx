@@ -1,5 +1,7 @@
 import React from 'react'
 import classnames from 'classnames'
+import './label.scss'
+
 
 export interface LabelProps {
   text: string
@@ -7,7 +9,7 @@ export interface LabelProps {
   classNames?: string 
 }
 
-const Label: React.FC<LabelProps> = ({ text, active, classNames }) => {
+const Label: React.FC<LabelProps> = ({ text, active, classNames = '' }) => {
   const classNamesWithSpace = ' ' + classNames
   
   return (

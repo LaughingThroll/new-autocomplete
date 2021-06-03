@@ -4,15 +4,15 @@ import './dropdownContentLabel.scss'
 
 
 export interface DropdownContentLabelProps extends LabelProps {
-  description: string
   classNames?: string
+  labelText: string
 }
 
-const DropdownContentLabel: React.FC<DropdownContentLabelProps> = ({ description, text, active, classNames = '' }) => {
+const DropdownContentLabel: React.FC<DropdownContentLabelProps> = ({ labelText, text, active, classNames = '' }) => {
   return (
     <div className={`dropdown-content dropdown-content--label ${classNames}`}>
-      <Label text={text} active={active} />
-      <div className="dropdown-content__text">{description}</div> 
+      <Label text={labelText} active={active} />
+      <div className="dropdown-content__text">{text}</div> 
     </div>
   )
 }

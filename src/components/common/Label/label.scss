@@ -1,8 +1,11 @@
-@import './src/styles/vars'; 
+$label-color: #fff;
+$label-bg-color: #62677c;
+$label-bg-color-active: #2398ff;
 
 .label {
   box-sizing: border-box;
   min-width: 60px;
+  max-width: 100px;
   text-align: center;
   text-transform: uppercase;
   color: $label-color;
@@ -11,7 +14,11 @@
   font-size: 12px;
   line-height: 12px;
   background-color: $label-bg-color;
-
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: background-color .2s ease-out;
+  
   &--active {
     background-color: $label-bg-color-active;
   }
