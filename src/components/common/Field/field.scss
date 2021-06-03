@@ -1,0 +1,67 @@
+@import './src/styles/vars.scss';
+
+.field {
+  position: relative;
+  
+  &--icon {
+    .field__input {
+      padding: 0 26px 0 60px;
+    }
+
+    &::before {
+      $width: 26px;
+      $coff: 6px;
+      
+      content: url('/assets/icons/loupe.svg');
+      position: absolute;
+      top: 50%;
+      left: $width - $coff;
+      width: $width;
+      height: 26px;
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+  }
+}
+
+.field__input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 26px;
+  height: 75px;
+  background-color: $field-bg-color;
+  color: $field-color;
+  border: 0;
+  box-shadow: $box-shadow--1,
+              $box-shadow--2;
+  border-radius: 10px;
+  outline: none;
+  font-weight: 700;
+  font-size: 20px;
+  
+  &::placeholder {
+    color: $field-placeholder-color;
+    font-weight: 400;
+  }
+
+  &:focus {
+    animation: easy-bounce .3s ease-out;
+  }
+
+  &:focus::placeholder {
+    opacity: 0;
+  }
+}
+
+
+@keyframes easy-bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.003);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
