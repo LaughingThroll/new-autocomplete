@@ -1,4 +1,6 @@
 import React from 'react'
+import './textWithIcon.scss'
+
 
 export interface TextWithIconProps {
   text: string

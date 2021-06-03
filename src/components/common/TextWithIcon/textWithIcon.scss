@@ -1,0 +1,20 @@
+$color: #a7aab5;
+$padding-right: 26px;
+
+.text-with-icon {
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+  min-width: 52px - $padding-right;
+  color: $color;
+  padding-right: $padding-right;
+  
+  &::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 16px;
+    height: 16px;
+  }
+}

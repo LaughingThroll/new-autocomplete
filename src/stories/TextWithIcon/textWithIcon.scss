@@ -1,0 +1,25 @@
+.test-text-with-icon {
+  color: #000022;
+  background-color: #d3d3d3;
+  font-weight: 700;
+  line-height: 32px;
+  min-width: 100px;
+  padding: 0 10px;
+  cursor: pointer;
+
+  &.icon-enter::before {
+    width: 32px;
+    height: 32px;
+    right: 10px;
+  }
+}
+
+
+
+.icon-enter::before {
+  content: url('../assets/enter.svg')
+}
+
+.icon-command::before {
+  content: url('../assets/command.svg');
+}
