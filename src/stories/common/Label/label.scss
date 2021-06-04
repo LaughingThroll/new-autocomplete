@@ -1,0 +1,9 @@
+.test-class {
+  background-color: #f3f3f3;
+  color: #004422;
+
+  &.label--active {
+    background-color: #1416ab;
+    color: #fff;
+  }
+}

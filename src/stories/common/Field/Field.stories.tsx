@@ -14,23 +14,26 @@ const Template: Story<FieldProps> = (args) => <Field {...args} />;
 
 export const Default = Template.bind({})
 Default.args = {
-  // onChange: (e: ChangeEvent<HTMLInputElement>) => {}
+  onChange: (e: ChangeEvent<HTMLInputElement>) => {}
 }
 
 
 export const WithValue = Template.bind({})
 WithValue.args = {
+  onChange: (e: ChangeEvent<HTMLInputElement>) => {},
   icon: true,
   value: 'Hello everyone'
 }
 
 export const WithIcon = Template.bind({})
 WithIcon.args = {
+  onChange: (e: ChangeEvent<HTMLInputElement>) => {},
   icon: true
 }
 
 export const WithPlaceholder = Template.bind({})
 WithPlaceholder.args = {
+  onChange: (e: ChangeEvent<HTMLInputElement>) => {},
   icon: true,
   placeholder: 'Hello everyone'
 }
@@ -38,6 +41,7 @@ WithPlaceholder.args = {
 
 export const WithCustomClass = Template.bind({})
 WithCustomClass.args = {
+  onChange: (e: ChangeEvent<HTMLInputElement>) => {},
   icon: true,
   placeholder: 'Hello everyone',
   classNames: 'test-field'
@@ -46,6 +50,7 @@ WithCustomClass.args = {
 
 export const WithOtherIcon = Template.bind({})
 WithOtherIcon.args = {
+  onChange: (e: ChangeEvent<HTMLInputElement>) => {},
   icon: true,
   placeholder: 'Hello everyone',
   classNames: 'test-field test-field--icon'
